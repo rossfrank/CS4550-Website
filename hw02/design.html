@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>hw02 Design</title>
+    <link href="../bootstrap.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <div class="container">
+        <div class="page-header">
+          <h1 class="mb-1">User-First Design</h1>
+        </div>
+        <div class="container">
+          <h4 class="mb-1">As a normal user, I should be able to log into their accounts using a username and password.</h4>
+          <p class="mb-1">Users click the login button they should be brought to a login page.
+            On this login page there should be a username and password box where the user puts in their username and password.
+            After typing both in the User should click the Login Button at which point the information should be sent to the server to be authenticated.
+            The server sends authenticates and sends back the response. If the information is correct the User is taken to the Homepage.
+            Otherwise the page throws and error asking the user to try again.</p>
+        </div>
+        <div class="container">
+          <h4 class="mb-1">As a normal user, I should be able to write posts to submit with #hashtags and @mentions.</h4>
+          <p class="mb-1">To write a post a user should click the new message button. The button should open up a new message box where the user can write a message.
+            While writing the message anytime the users uses a '#' the following word should be converted into a hashtag.
+            When the user writes an '@' there should be a dropdown with an autocomplete form for a username.
+            After the User finishes they click the submit button and the message should be posted.</p>
+        </div>
+        <div class="container">
+          <h4 class="mb-1">As a normal user, I should be able to reply to other Users messages.</h4>
+          <p class="mb-1">A user when reading a message can click on the reply button with the message.
+            When they click the button a new message form opens up and allows the user to send a nessage in response to the original message.</p>
+        </div>
+        <div class="container">
+          <h4 class="mb-1">As a normal user, I should be able to follow other users.</h4>
+          <p class="mb-1">A user can click on the username of a user and be taken to their profile page where all of their messages are listed.
+            On this page there should be a follow button where the user is allowed to follow messages from the user.
+            After clicking the button the button should change to an unfollow button to let the user know they have started to follow.
+            After following the user, their messages will start to appear on the homepage.</p>
+        </div>
+        <div class="container">
+          <h4 class="mb-1">As a normal user, I should be able to like posts</h4>
+          <p class="mb-1">Next to the reply button on a message there should be a 'like' button where a user can like the post.
+            When the user likes the post the button should change and the counter of likes should go up.
+            When hovering over the counter or the like button there should be a list of users that like the post.</p>
+        </div>
+      </div>
+      <div class="container">
+        <div class="page-header">
+          <h1 class="mb-1">Data-First Design</h1>
+        </div>
+        <div class="container">
+          <ul class="list-group">
+            <li class="list-group-item">User
+              <p class="mb-1">* Email Address<br />* Username<br />* Password<br />* Following<br />* Followers</p>
+              <p class="mb-1">This creation page will have fields for Email Address, Username and password.
+                The Following and Followers field will be filled as users follow each other.
+                <br /> The User will have a Followers page to update their Followers and a profile page to update the username and password.</p>
+            </li>
+            <li class="list-group-item">Messages
+              <p class="mb-1">* Posting User<br />* Message ID<br />* Message<br />* ListOf Likes<br />* ListOf ReplyMessages<br />* Replied Message ID</p>
+              <p class="mb-1">This creation page will just be a field for writing the message. Message ID, Replied Message ID, and User are filed by the application.
+                <br /> The User will see all of their messages on their profiles page.</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script src="../jquery.min.js"></script>
+    <script src="../bootstrap.min.js"></script>
+  </body>
+</html>
